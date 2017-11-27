@@ -8,16 +8,14 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        b = findViewById(R.id.button);
+
     }
 
-    public void hello(View v)
-    {
-        Toast.makeText(getApplicationContext(),"heloo",Toast.LENGTH_LONG).show();
-    }
+
 }
+
