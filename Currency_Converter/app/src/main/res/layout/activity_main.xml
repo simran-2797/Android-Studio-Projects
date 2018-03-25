@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simranmhatre.currency_converter.MainActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:src="@drawable/main"
+       android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/cc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="35sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#000"
+        android:alpha="0.7"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/dollars"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cc"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rupees To Dollars"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:background="#000"
+        android:textSize="20dp"
+        android:alpha="0.7"
+        android:onClick="dollars"/>
+    <Button
+        android:id="@+id/euro"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dollars"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rupees To Euros"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:background="#000"
+        android:textSize="20dp"
+        android:alpha="0.7"
+        android:onClick="euros"
+        />
+
+    <Button
+        android:id="@+id/bath"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/euro"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rupees To Baht"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:background="#000"
+        android:textSize="20dp"
+        android:alpha="0.7"
+        android:onClick="bath"
+        />
+
+
+</RelativeLayout>

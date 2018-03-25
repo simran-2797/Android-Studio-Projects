@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simranmhatre.currency_converter.Main3Activity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pounds"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/cc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:alpha="0.7"
+        android:background="#000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Currency Converter"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        />
+
+    <TextView
+        android:id="@+id/textview_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cc2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:textSize="35sp"
+        android:text="Rupees"
+        android:textColor="#ffff"
+        android:background="#000"
+        android:alpha="0.7"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_rupees"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/textview_r"
+        android:layout_below="@+id/cc2"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="20dp"
+        android:hint="Enter the amount"
+        android:background="#000"
+        android:textColor="#fff"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textview_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_r"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:textSize="35sp"
+        android:text="Pounds"
+        android:textColor="#ffff"
+        android:background="#000"
+        android:alpha="0.7"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/edit_pounds"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/edit_rupees"
+        android:layout_alignStart="@+id/edit_rupees"
+        android:layout_alignTop="@+id/textview_p"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:background="#000"
+        android:textColor="#fff"
+        android:layout_height="50dp"
+        android:padding="2dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_p"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:alpha="0.7"
+        android:background="#000"
+        android:onClick="convert"
+        android:padding="5dp"
+        android:text="Convert"
+        android:textColor="#ffff"
+        android:textSize="30sp" />
+
+</RelativeLayout>
